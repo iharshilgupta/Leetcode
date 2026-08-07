@@ -1,10 +1,13 @@
 class Solution {
 public:
     bool searchMatrix(vector<vector<int>>& matrix, int target) {
+        // treat this matrix and perform search in sorted matrix so use binary search on this matrix
         int n=matrix.size();
         if(n==0){ // empty matrix
             return false;
         }
+
+
         int m=matrix[0].size();
         int low=0;
         int high=n*m-1;
