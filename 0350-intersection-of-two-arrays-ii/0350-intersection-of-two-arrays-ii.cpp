@@ -12,7 +12,7 @@ public:
         for(int i:nums2){
             if(one[i]>0){ // checking count greater than 0 and pushing the value in answer array
                 ans.push_back(i);
-                 one[i]--; // decrementing the value to ignore duplicates// edge case
+                one[i]--; // decrementing the value to ignore duplicates// edge case
             }
         }
         return ans;
