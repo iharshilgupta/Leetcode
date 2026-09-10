@@ -18,10 +18,9 @@ public:
 
         int n=nums.size();
         int sum=n*(n+1)/2;
-        int firSum=0;
         for(int i:nums){
             sum-=i;
         }
-        return sum-firSum;
+        return sum;
     }
 };
