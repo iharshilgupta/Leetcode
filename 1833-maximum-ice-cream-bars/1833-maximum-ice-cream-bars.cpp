@@ -6,7 +6,7 @@ public:
         sort(costs.begin(),costs.end());
         for(int i=0;i<n;i++){
             if(coins<costs[i]){
-                continue;
+                break;
             }
             else{
                 coins-=costs[i];
